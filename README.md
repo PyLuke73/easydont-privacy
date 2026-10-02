@@ -1,3 +1,3 @@
-# EasyDont - privacy policy
+# EasyDon - privacy policy
 
-Pagina pubblica dell informativa sulla privacy di EasyDont (client per Mastodon).
+Pagina pubblica dell informativa sulla privacy di EasyDon (client per Mastodon).
