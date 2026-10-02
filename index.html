@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EasyDont – Privacy Policy</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1d2327; --muted:#5b6770; --accent:#0b7a5a; --line:#dde3e6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14181a; --fg:#e6ebed; --muted:#9aa7ae; --accent:#4fd1a5; --line:#2b3438; }
+  }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  h1 { font-size:1.9rem; margin:.2em 0; }
+  h2 { font-size:1.25rem; margin-top:2em; padding-top:.6em; border-top:1px solid var(--line); color:var(--accent); }
+  .meta { color:var(--muted); }
+  a { color:var(--accent); }
+  li { margin:.25em 0; }
+  code { background:var(--line); padding:0 .3em; border-radius:4px; }
+</style>
+</head>
+<body>
+<main>
+
+<h1>Privacy Policy — EasyDont</h1>
+<p class="meta">Last updated: 2026-10-02</p>
+
+<h2>In short</h2>
+<p>EasyDont is a client for Mastodon, the decentralised social network. It talks directly to the
+Mastodon server you choose and does <strong>not</strong> go through any server of ours. The app has
+no ads, no analytics, no tracking and no accounts with the developer. We do not sell or share data
+with anyone. Your posts, messages and account data live on your Mastodon server and are governed by
+that server's own privacy policy.</p>
+<p>EasyDont is an independent project. It is <strong>not</strong> affiliated with, endorsed by or
+sponsored by Mastodon gGmbH or the Mastodon project.</p>
+
+<h2>Data controller and contact</h2>
+<p>Luca Colombo, Italy. For any privacy matter write to
+<a href="mailto:luca.colombo@ik.me">luca.colombo@ik.me</a>.</p>
+
+<h2>What the app does on your device</h2>
+<ul>
+  <li><strong>Sign-in.</strong> You sign in through the OAuth page of your own Mastodon server, in the
+  browser. The app never sees your password. The access token is kept in the operating system's
+  secure storage (Android Keystore / iOS Keychain). Signing out revokes the token on the server.</li>
+  <li><strong>Local data.</strong> Settings, reading positions, saved filters, drafts and the data-usage
+  counters are stored only on your device. Drafts are encrypted. Android backups of the app are
+  disabled, so this data is not copied to your Google account.</li>
+  <li><strong>App lock.</strong> If you enable it, the fingerprint/PIN check is done by the operating
+  system; the app receives only a yes/no answer.</li>
+  <li><strong>Permissions.</strong> Internet (to reach Mastodon servers), notifications, and biometrics
+  (only for the app lock).</li>
+</ul>
+
+<h2>Connections the app makes</h2>
+<p>Using the app necessarily sends your requests (and your IP address) to the following parties. We
+do not receive any of it.</p>
+<ul>
+  <li><strong>Your Mastodon server(s)</strong> — everything you read, write or change. Their operators
+  are responsible for that data.</li>
+  <li><strong>Other Mastodon servers</strong> — to show complete lists of followers, boosts,
+  favourites or replies, the app may query the public API of the server where an account or post
+  originates. These requests carry no token and no account information.</li>
+  <li><strong>joinmastodon.org</strong> — only if you use "Explore servers" to look for servers with
+  open registration.</li>
+  <li><strong>Link and media hosts</strong> — images, videos and link previews are loaded from the
+  addresses contained in posts.</li>
+</ul>
+
+<h2>Translation of posts</h2>
+<p>You choose how posts are translated (Settings → Translation). Depending on your choice:</p>
+<ul>
+  <li><strong>Mastodon server.</strong> The text of the post is sent to your server's translation
+  service, which may be run by a third party chosen by the server's operator.</li>
+  <li><strong>TranslatePsy (on the device).</strong> Translation runs offline on your phone. The
+  language models are not bundled: they are downloaded from Hugging Face only after you consent, and
+  the download server sees your IP address. Updates are searched for only on request.</li>
+  <li><strong>Google ML Kit (on the device).</strong> Translation and the optional text recognition for
+  alt text run on the phone, but Google's ML Kit downloads its models from Google servers and sends
+  Google diagnostic data (e.g. device model, installation identifier, languages), as described in
+  Google's "ML Kit data disclosure". For this reason this option is not tracking-free.</li>
+</ul>
+
+<h2>Notifications</h2>
+<ul>
+  <li><strong>Push (UnifiedPush).</strong> Mastodon sends the notification through the push distributor
+  you use. With the built-in distributor on devices with Google Play services, the message travels
+  through Google's push infrastructure, which sees that a notification exists, not its readable
+  content (it is encrypted end to end between your server and the app).</li>
+  <li><strong>Without Google Play services</strong> the app checks your server periodically (about every
+  15 minutes) in the background.</li>
+</ul>
+
+<h2>Feedback form (optional)</h2>
+<p>If you send feedback from Settings, the message (max. 1000 characters), the app version and, only
+if you enter it, your email address and any screenshots you attach are sent to a relay run by the
+developer on Cloudflare Workers, which forwards them to the developer by email.</p>
+<ul>
+  <li>Your IP address is <strong>not stored</strong>; it is used only for a rate limit and discarded
+  after 2 minutes.</li>
+  <li>A message without attachments is kept in a queue for at most 7 days until the daily summary is
+  sent, then deleted. A fingerprint (SHA-256) of the message is kept for 24 hours to discard
+  duplicates. Screenshots are not stored on the relay.</li>
+  <li>An email address, if given, is used only to reply to you.</li>
+  <li>Like any email, the message passes through the mail systems involved.</li>
+</ul>
+<p>Legal basis: your consent (Art. 6(1)(a) GDPR), which you give by sending the form.</p>
+
+<h2>Optional "Support the project" link</h2>
+<p>The app can open a Ko-fi page in your browser. Nothing is sent unless you tap the link; Ko-fi then
+applies its own privacy policy.</p>
+
+<h2>Widget and sharing</h2>
+<p>The Android home-screen widget shows data already stored on your device. When you share text,
+links or images <em>to</em> EasyDont from another app, the content is used only to compose a post that
+you review before sending.</p>
+
+<h2>App stores</h2>
+<p>If you installed the app from Google Play or the App Store, these stores may collect their own data
+under their own policies:
+<a href="https://policies.google.com/privacy">Google</a>,
+<a href="https://www.apple.com/legal/privacy/">Apple</a>.</p>
+
+<h2>Your rights</h2>
+<p>Under the GDPR you have the right of access, rectification, erasure, restriction, objection and data
+portability (Articles 15–22). Because the developer does not keep your data beyond what is described
+above, there is usually nothing to act on; you can still write to the address above. For data on your
+Mastodon server, contact that server's operator. You may lodge a complaint with a supervisory
+authority; in Italy this is the
+<a href="https://www.garanteprivacy.it">Garante per la protezione dei dati personali</a>.</p>
+
+<h2>Children</h2>
+<p>The app is not directed to children under 13 and does not knowingly collect their data. Mastodon
+servers set their own minimum age.</p>
+
+<h2>Retention and deletion</h2>
+<p>Local data stays on your device until you clear it or uninstall the app. Feedback data is retained
+as described above. To remove your Mastodon data, delete it from your server or delete your account
+there.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the date at the top is updated and, for significant changes, the app's
+"What's new" screen mentions it.</p>
+
+</main>
+</body>
+</html>
